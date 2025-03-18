@@ -3,19 +3,10 @@ require_once('Tigger.php');
 
 $instance1 = Tigger::getInstance();
 
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
-$instance1->roar(). "<br>";
+$numAleatori = rand(1, 50);
+for ($i = 0; $i < $numAleatori; $i++) {
+    $instance1->roar(). "<br>";
+}
+
 
 echo $instance1->getCounter();

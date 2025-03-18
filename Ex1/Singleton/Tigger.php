@@ -10,7 +10,7 @@ private function __construct() {
 
 public function roar() {
         echo "Grrr!" . PHP_EOL;
-        Self::$totalRoars++;
+        $this->totalRoars++;
 }
 
 public static function getInstance() {
@@ -25,6 +25,6 @@ private function __clone() {}
 private function __wakeup() {}
 
 public function getCounter(): string {
-    return "Ha rugido un total de: " . Self::$totalRoars;
+    return "Ha rugido un total de: " . $this->totalRoars;
 }
 }
